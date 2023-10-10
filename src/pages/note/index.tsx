@@ -8,7 +8,11 @@ import OptionsList from '@components/OptionsList';
 import SendModal from '@components/SendModal';
 
 const Note = () => {
+  
+
+
   const searchParams = useSearchParams();
+
   const { responding, setResponding, setSelectedAnswer } =
     useContext(AppContext);
   const { isOpen, onOpen, onClose } = useDisclosure();

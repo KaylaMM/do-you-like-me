@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { AppContext } from '@context';
-import { Option } from '@types';
+import { Option, Answers } from '@types';
 import Checkbox from '@components/Checkbox';
 import styles from '@styles/Option.module.scss';
 
@@ -9,6 +9,7 @@ interface OptionProps {
 }
 
 const Option = ({ option }: OptionProps) => {
+
   const { selectedAnswer } = useContext(AppContext);
 
   const { label } = option;
