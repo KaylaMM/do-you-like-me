@@ -9,15 +9,7 @@ const HeartDoodle = ()  => {
 
   const { selectedAnswer } = useContext(AppContext);
 
-  const doodleColor = () => {
-    if (selectedAnswer === Answers.YES){
-      return 'red'
-    } else if (selectedAnswer === Answers.NO){
-      return 'blue'
-    } else if (selectedAnswer === Answers.MAYBE){
-      return 'purple'
-    }
-  }
+  const doodleColor = () => (selectedAnswer === Answers.YES) ? 'red' : (selectedAnswer === Answers.NO) ? 'blue' : (selectedAnswer === Answers.MAYBE) ? 'purple' : ''
 
   return (
     <Image
